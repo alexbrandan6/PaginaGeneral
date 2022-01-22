@@ -1,0 +1,46 @@
+#sectionCuerpo{
+    padding-top: 0;
+}
+
+#sectionCuerpo h3, h4{
+	text-align: center;
+}
+
+#sectionCuerpo .contenedor{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#sectionCuerpo article{
+	margin: 15px;
+}
+
+#sectionCuerpo img{
+	width: 100%;
+	max-width: 280px;
+}
+
+section div article img{
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+
+section div article img:hover{
+    -webkit-transform: scale(1.05,1.05);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 100ms;
+    -moz-transform: scale(1.12,1.12);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+}
+
+section div article a{
+    cursor: default;
+}

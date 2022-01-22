@@ -67,12 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\banner.css" />
+    <Content Include="css\estilos.css" />
+    <Content Include="css\fontello.css" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\sectionCuerpo.css" />
+    <Content Include="css\sectionInfo.css" />
+    <Content Include="font\fontello.svg" />
+    <Content Include="img\banner.png" />
+    <Content Include="img\img1.png" />
+    <Content Include="img\img2.png" />
+    <Content Include="img\img3.png" />
+    <Content Include="img\img4.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\scripts.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="font\fontello.eot" />
+    <Content Include="font\fontello.ttf" />
+    <Content Include="font\fontello.woff" />
+    <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
