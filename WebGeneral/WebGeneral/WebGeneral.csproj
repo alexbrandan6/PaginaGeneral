@@ -119,6 +119,13 @@
     <Compile Include="repositorio\DescripcionRepositorio.cs" />
     <Compile Include="repositorio\SeccionRepositorio.cs" />
     <Compile Include="repositorio\TituloRepositorio.cs" />
+    <Compile Include="WBOMaster.Master.cs">
+      <DependentUpon>WBOMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WBOMaster.Master.designer.cs">
+      <DependentUpon>WBOMaster.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="font\fontello.eot" />
@@ -126,6 +133,7 @@
     <Content Include="font\fontello.woff" />
     <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
+    <Content Include="WBOMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

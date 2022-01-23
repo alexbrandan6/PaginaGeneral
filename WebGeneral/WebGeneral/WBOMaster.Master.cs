@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebGeneral
 {
-    public partial class WBOHome1 : System.Web.UI.Page
+    public partial class WBOMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["NombreUsuario"].ToString() == "") Response.Redirect("WBOLogin.aspx");
-
-            lblUsuario.InnerText = Session["NombreUsuario"].ToString();
+            if(Session["NombreUsuario"].ToString() == "") Response.Redirect("WBOLogin.aspx");
         }
     }
 }
