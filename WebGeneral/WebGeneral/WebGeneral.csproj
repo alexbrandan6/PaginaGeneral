@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\WBO\logoLogin.png" />
+    <Content Include="WBOHome.aspx" />
     <Content Include="css\banner.css" />
     <Content Include="css\estilos.css" />
     <Content Include="css\fontello.css" />
@@ -82,9 +84,19 @@
     <Content Include="img\img4.png" />
     <Content Include="Index.aspx" />
     <Content Include="js\scripts.js" />
+    <Content Include="WBOLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="modelo\Usuario.cs" />
+    <Compile Include="repositorio\WBOLoginRepositorio.cs" />
+    <Compile Include="WBOHome.aspx.cs">
+      <DependentUpon>WBOHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WBOHome.aspx.designer.cs">
+      <DependentUpon>WBOHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,7 +104,21 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WBOLogin.aspx.cs">
+      <DependentUpon>WBOLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WBOLogin.aspx.designer.cs">
+      <DependentUpon>WBOLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modelo\Descripcion.cs" />
+    <Compile Include="modelo\Titulo.cs" />
+    <Compile Include="modelo\Seccion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repositorio\AccesoDatos.cs" />
+    <Compile Include="repositorio\DescripcionRepositorio.cs" />
+    <Compile Include="repositorio\SeccionRepositorio.cs" />
+    <Compile Include="repositorio\TituloRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="font\fontello.eot" />
