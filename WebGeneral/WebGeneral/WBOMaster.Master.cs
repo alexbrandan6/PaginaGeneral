@@ -11,7 +11,6 @@ namespace WebGeneral
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["NombreUsuario"].ToString() == "") Response.Redirect("WBOLogin.aspx");
         }
     }
 }

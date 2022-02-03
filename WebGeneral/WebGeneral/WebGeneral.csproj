@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\WBO\logoLogin.png" />
+    <Content Include="WBOBanner.aspx" />
     <Content Include="WBOHome.aspx" />
     <Content Include="css\banner.css" />
     <Content Include="css\estilos.css" />
@@ -88,8 +89,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FuncionesComunes.cs" />
     <Compile Include="modelo\Usuario.cs" />
+    <Compile Include="repositorio\WBOBannerRepositorio.cs" />
     <Compile Include="repositorio\WBOLoginRepositorio.cs" />
+    <Compile Include="WBOBanner.aspx.cs">
+      <DependentUpon>WBOBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WBOBanner.aspx.designer.cs">
+      <DependentUpon>WBOBanner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WBOHome.aspx.cs">
       <DependentUpon>WBOHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -111,14 +121,9 @@
     <Compile Include="WBOLogin.aspx.designer.cs">
       <DependentUpon>WBOLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="modelo\Descripcion.cs" />
-    <Compile Include="modelo\Titulo.cs" />
-    <Compile Include="modelo\Seccion.cs" />
+    <Compile Include="modelo\Banner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositorio\AccesoDatos.cs" />
-    <Compile Include="repositorio\DescripcionRepositorio.cs" />
-    <Compile Include="repositorio\SeccionRepositorio.cs" />
-    <Compile Include="repositorio\TituloRepositorio.cs" />
     <Compile Include="WBOMaster.Master.cs">
       <DependentUpon>WBOMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +145,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\banners\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

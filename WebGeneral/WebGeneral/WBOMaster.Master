@@ -23,7 +23,7 @@
                 <div class="bg-dark p-4 navbar navbar-expand-lg navbar-dark">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item border-bottom">
-                            <a class="nav-link" href="#">Banner</a>
+                            <a class="nav-link" href="WBOBanner.aspx">Banner</a>
                         </li>
                         <li class="nav-item border-bottom">
                             <a class="nav-link" href="#">Contacto</a>

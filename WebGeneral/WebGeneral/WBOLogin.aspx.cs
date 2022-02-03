@@ -16,7 +16,7 @@ namespace WebGeneral
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["NombreUsuario"] = "";
+            Session["NombreUsuario"] = null;
             divAlert.Visible = false;
         }
 
