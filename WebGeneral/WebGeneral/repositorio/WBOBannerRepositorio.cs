@@ -145,5 +145,19 @@ namespace WebGeneral.repositorio
             SqlParametros = datos.Parameters.Add("@idBanner", SqlDbType.Int);
             SqlParametros.Value = banner.getIdBanner();
         }
+
+        public DataSet BannerObtenerActivo()
+        {
+            try
+            {
+                AccesoDatos acc = new AccesoDatos();
+                SqlCommand datos = new SqlCommand();
+                return acc.EjecutarProcedimientoAlmacenado(datos, "SP_Banner_Obtener_Activo");
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

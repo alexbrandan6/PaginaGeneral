@@ -33,10 +33,10 @@
 
         <div>
             <section id="banner">
-                <img src="img/banner.png" alt="">
+                <asp:Image ID="imgBanner" runat="server" />
                 <div class="contenedor">
-                    <h2>Titulo ejemplo</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tempora atque aliquam itaque voluptatibus ex possimus fugiat sint, corrupti quis modi. Delectus sit aliquam neque nihil aperiam! Ducimus, blanditiis ut?</p>
+                    <h2 id="hBanner" runat="server"></h2>
+                    <p id="pBanner" runat="server"></p>
                 </div>
             </section>
         </div>
